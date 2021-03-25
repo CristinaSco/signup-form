@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Signup-Form</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 left">
+          <h1>Impara a programmare guardando gli esperti del settore</h1>
+          <p>Guarda come i professionisti risolvono i problemi in tempo reale.
+            Guardare un tutorial può essere un buon metodo, ma imparare come ragiona un Developer è ancora meglio.</p>
+        </div>
+        <div class="col-md-5 right">
+          <div class="freetrial">
+            <span><b>7 giorni di prova gratuita</b>, poi $20 al mese</span>
+          </div>
+          <form class="form" name="myForm" action="" onsubmit="return !!(validateFirstName() & validateSecondName() & validate() & validatePassword())">
+
+            <div class="firstInput">
+              <div class="errorFirstName"><img class="icon" src="images/icon-error.svg" alt="icon"></div>
+              <input class="a" type="text" placeholder="First Name" id="a" name="fname">
+              <small id="return"></small>
+            </div>
+
+            <div class="secondInput">
+              <div class="errorSecondName"><img class="icon" src="images/icon-error.svg" alt="icon"></div>
+              <input class="b" type="text" placeholder="Second Name" id="b" name="sname">
+              <small id="execute"></small>
+            </div>
+
+            <div class="thirdInput">
+              <div class="error"><img class="icon" src="images/icon-error.svg" alt="icon"></div>
+              <input class="c" type="email" placeholder="Email Address" id="email">
+              <small id="result"></small>
+            </div>
+
+            <div class="fourthInput">
+              <div class="errorPassword"><img class="icon" src="images/icon-error.svg" alt="icon"></div>
+              <input class="d" type="password" placeholder="Password" id="c" name="passw">
+              <small id="write"></small>
+            </div>
+
+            <button id="validate" type="submit">RICHIEDI LA TUA PROVA GRATUITA</button>
+            <p class="first">Inviandoci i tuoi dati, avrai accesso ai nostri servizi. <span class="second">Termini e Condizioni</span></p>
+          </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
